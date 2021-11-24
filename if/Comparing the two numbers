@@ -1,0 +1,15 @@
+let fs = require('fs');
+let input = require('fs').readFileSync('dev/stdin').toString().split(' ');
+//let input = fs.readFileSync('input.txt').toString()
+
+a = Number(input[0]);
+b = Number(input[1]);
+
+
+if (a > b) {
+  console.log('>')
+} else if (a < b) {
+  console.log('<')
+} else {
+  console.log('==')
+}
